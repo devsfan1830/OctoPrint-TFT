@@ -63,7 +63,7 @@ func (m *systemPanel) createRestartButton() gtk.IWidget {
 
 	var cmd *octoprint.CommandDefinition
 	for _, c := range r.Core {
-		if c.Action == "reboot" {
+		if c.Action == "shutdown" {
 			cmd = c
 		}
 	}
